@@ -24,8 +24,8 @@ public class back10250 {
 			int w = b[i];
 			int n = c[i];
 			String row = ""+(n%h);
-			String col = (n/h+1)+"";
-			System.out.println(row+col.format("%02d", 2));
+			int col = (n/h+1);
+			System.out.println(row+String.format("%02d", col));
 		}
 		br.close();
 
