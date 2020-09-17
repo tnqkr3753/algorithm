@@ -8,7 +8,6 @@ public class back1193 {
 		int a = sc.nextInt();
 		int cnt = 0; //개수
 		int n = 0; //라인
-		int c = 0;
 		while (true) {
 			n++;
 			cnt +=n;
