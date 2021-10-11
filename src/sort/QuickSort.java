@@ -24,5 +24,4 @@ public class QuickSort extends Sort {
 		}
 		return start;
 	}
-
 }
