@@ -66,9 +66,4 @@ class Sorter2{
 			this.arr[l] = this.sortedArr[l];
 		}
 	}
-	private void swap(int x, int y) {
-		int tmpA = this.arr[x];
-		arr[x] = arr[y];
-		arr[y] = tmpA;
-	}
 }
