@@ -1,33 +1,15 @@
 import sys
 
 def process(n : int, k : int):
-    """_summary_
-
-    Args:
-        n (int): _description_
-        k (int): _description_
-
-    Returns:
-        ans: _description_
-    """    
     ans = 0
-    divide_count = 0
-    cannot_move = 0
     while True:
-        if n <= 0 or k == 0:
-            break
-        minus_value = 1<< divide_count
-        value = n - minus_value
-        
-        if value < 0:
-            ans =  abs(value)
-            k -= 1
-            n -= 1 << (divide_count-1)
-            
-            divide_count = 1
-            
-        else : divide_count +=1 
-        
+        b_n = bin(n)
+        if b_n.count('1') > k:
+            i = b_n[::-1].index('1') 
+            v = 1<<i
+            ans += v
+            n += v
+        else : break
     return int(ans)
     
 
